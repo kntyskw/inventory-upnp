@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+    <Object ObjectType="MODefinition">
+        <Name>UPnP Rendering Control Service</Name>
+        <Description1>LwM2M device object model for UPnP Rendering Control service.</Description1>
+        <ObjectID>30001</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:oma:30001</ObjectURN>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="2215">
+                <Name>Mute</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Boolean</Type>
+                <RangeEnumeration />
+                <Units></Units>
+                <Description>Mute status of the renderer</Description>
+            </Item>
+            <Item ID="2216">
+                <Name>Volume</Name>
+                <Operations>R</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration />
+                <Units></Units>
+                <Description>Current audio volume of the renderer</Description>
+            </Item>
+            <Item ID="2430">
+                <Name>SetVolume</Name>
+                <Operations>E</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type>Integer</Type>
+                <RangeEnumeration />
+                <Units />
+                <Description>Sets the renderer audio volume.</Description>
+            </Item>
+        </Resources>
+        <Description2 />
+    </Object>
+</LWM2M>

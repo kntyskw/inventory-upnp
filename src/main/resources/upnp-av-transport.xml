@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+    <Object ObjectType="MODefinition">
+        <Name>UPnP AV Transport Service</Name>
+        <Description1>LwM2M device object model for UPnP AV Transport service.</Description1>
+        <ObjectID>30002</ObjectID>
+        <ObjectURN>urn:oma:lwm2m:oma:30002</ObjectURN>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Resources>
+            <Item ID="2401">
+                <Name>SetAVTransportURI</Name>
+                <Operations>E</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type />
+                <RangeEnumeration />
+                <Units />
+                <Description>Sets the AV transport URI.</Description>
+            </Item>
+            <Item ID="2409">
+                <Name>Stop</Name>
+                <Operations>E</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type />
+                <RangeEnumeration />
+                <Units />
+                <Description>Stops playback.</Description>
+            </Item>
+            <Item ID="2410">
+                <Name>Play</Name>
+                <Operations>E</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type />
+                <RangeEnumeration />
+                <Units />
+                <Description>Starts playback.</Description>
+            </Item>
+            <Item ID="2411">
+                <Name>Pause</Name>
+                <Operations>E</Operations>
+                <MultipleInstances>Single</MultipleInstances>
+                <Mandatory>Mandatory</Mandatory>
+                <Type />
+                <RangeEnumeration />
+                <Units />
+                <Description>Pauses playback.</Description>
+            </Item>
+        </Resources>
+        <Description2 />
+    </Object>
+</LWM2M>

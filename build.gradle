@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+repositories {
+  mavenCentral()
+  maven { url 'https://soracom.github.io/maven-repository/' }
+  maven { url 'http://4thline.org/m2/' }
+}
+
+def INVENTORY_AGENT_VERSION="0.0.5"
+
+dependencies {
+    compile "io.soracom:soracom-inventory-agent-for-java-core:$INVENTORY_AGENT_VERSION"
+    compile "org.fourthline.cling:cling-core:2.1.1"
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "App"
+    }
+}
+
+
+mainClassName = 'App'
